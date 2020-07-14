@@ -1,0 +1,54 @@
+html {
+    background-image: url("back.jpg");
+    display: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.name {
+    position: absolute;
+    font-size: 25px;
+    float: center;
+    color: yellow;
+    padding-left: 200px;
+    padding-top: 320px;
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: #4682B4;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50px solid skyblue;
+    border-radius: 50%;
+    margin: 90px 300px;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0px 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 15px black,
+        inset 0 0 0 30px skyblue,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    
+}

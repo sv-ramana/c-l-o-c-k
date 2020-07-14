@@ -1,0 +1,58 @@
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> DAY 2</title>
+    </head>
+    
+    <body>
+    <div class="name"><h2>S VENKATA RAMANA</h2><span>day two challenge</span></div>
+    <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+     </div>
+     
+    <script>
+        
+        
+    
+        var secondhand = document.querySelector('.second-hand');
+        var minshand = document.querySelector('.min-hands');
+        var hourhand = document.querySelector('.hour-hand');
+        
+        
+        function dataset(){
+          
+            var now = new Date();
+              
+            var seconds =  now.getSeconds();
+            var secondsdegree = ((seconds / 60 ) * 360) + 90;
+            secondhand.style.transform = `rotate(${secondsdegree}deg)`;
+            
+            
+            var  mins = now.getMinutes();
+            var minsdegree =  ((mins / 60) * 360) + 90;
+            minshand.style.transform = `rotate(${minsdegree}deg)`;
+            
+            
+            var hours = now.getMinutes();
+            var hourdegree = ((mins / 12) * 360) + 90;
+            hourhand.style.transform = `rotate(${hourdegree}deg)`;
+        }
+        
+      
+        
+        
+        setInterval(dataset, 1000);
+        
+        </script>
+    
+    </body>
+    
+    
+    
+    
+    </html>
